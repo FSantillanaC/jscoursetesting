@@ -12,8 +12,17 @@ function checkCountValue() {
   } else if (count === 20) {
     alert("Your Instagram post gained 20 followers! Keep it up!");
   }
+    else if (count === 0) {
+    alert("Your Instagram post is 0 followers!");  
+    }
 }
 
 function displayCount() {
 document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
 }
+
+function resetCount() {
+    let count = 0; // Initialize count to 0
+    displayCount(); // Display the count
+    checkCountValue(); // Check count value and display messages
+  }
